@@ -155,6 +155,10 @@
     .descripcion-personal {
         width: 90%;
     }
+    .descripcion-personal p {
+        box-shadow: 0 0 5px rgb(96, 51, 0);
+        padding: 10px;
+    }
  
     .fa-circle-chevron-up{
         margin-right: 1.2em;
@@ -166,6 +170,16 @@
     .descripcion p{
         margin: 0 0;
         font-size: 1em;
+    }
+    .close,
+    .previous,
+    .next{
+    font-size: 2em;
+
+    }
+    .close{
+        top: 2%;
+        left: 2%;
     }
 }
 /* ***  *****  414  *****   ******* *******************************/

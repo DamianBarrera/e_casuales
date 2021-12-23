@@ -1,5 +1,5 @@
-const galeria = document.querySelector('.galeria-personal');
-const fotos = document.querySelectorAll('.galeria-personal img')
+const galeria = document.querySelector('.galeria');
+const fotos = document.querySelectorAll('.galeria img')
 const imagen = document.querySelectorAll('.foto');
 const modal = document.querySelector('.modal-foto');
 const imagenInterna = document.querySelector('.img-interna');
@@ -10,7 +10,6 @@ let indiceImg = undefined;
 
  
 
-
 galeria.addEventListener('click',verImagen);
 previous.addEventListener('click',prevImg);
 next.addEventListener('click',nextImg);
@@ -18,7 +17,7 @@ next.addEventListener('click',nextImg);
 cerrar.addEventListener('click',cerrarVentana);
 
 function verImagen(e){
-    if(e.target.classList.contains('img')){
+    if(e.target.classList.contains('pics')){
          imagenInterna.textContent = "";
          modal.style.display="block";
          let fotoModal = document.createElement('img');
