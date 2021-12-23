@@ -6,12 +6,7 @@
     }
     .data-title p,
     .data-resp p {
-        font-size: 1.5em;
-         
-    }
-
-    .fa-circle-chevron-up{
-        margin-right: 1.2em;
+        font-size: 1.5em;    
     }
 }
 
@@ -130,6 +125,16 @@
 }
 /* **********  500  *************** *******************************/
 @media screen and (max-width:500px){
+    body::-webkit-scrollbar{
+        width: 8px;
+        background-image: linear-gradient(#a40ea3,#442255);
+       }
+       
+       body::-webkit-scrollbar-thumb{
+         border-radius: 10px;
+         background-image:linear-gradient(#e7193c, #a40e4c) ;
+     }
+
     .main{
         width: 100%;
     }
@@ -156,13 +161,15 @@
         width: 90%;
     }
     .descripcion-personal p {
-        box-shadow: 0 0 5px rgb(96, 51, 0);
+        box-shadow: 0 0 5px rgb(177, 131, 79);
         padding: 10px;
     }
- 
     .fa-circle-chevron-up{
-        margin-right: 1.2em;
-        font-size: 2em;
+        font-size: 1.7em;
+    }
+    .modal-foto{
+        width: 100vw;
+        height: 100%;
     }
 }
 /* **********  425  *************** *******************************/
@@ -174,8 +181,7 @@
     .close,
     .previous,
     .next{
-    font-size: 2em;
-
+        font-size: 2em;
     }
     .close{
         top: 2%;
@@ -210,7 +216,7 @@
     }
  
     .fa-circle-chevron-up{
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
     .whats-logo img{
         width: 80px;
@@ -228,6 +234,11 @@
     .guia h2{
         font-size: 1.4  em;
     }
+    .modal-foto{
+    width: 100%;
+    height: 100%;
+ 
+ }
 }
 /* ***  *****  328  *****   ******* *******************************/
 @media screen and (max-width:329px){
