@@ -1,74 +1,82 @@
 const galeria = document.querySelector('.galeria');
 const fotos = document.querySelectorAll('.galeria img')
-const imagen = document.querySelectorAll('.foto');
-const modal = document.querySelector('.modal-foto');
-const imagenInterna = document.querySelector('.img-interna-container');
+const modal = document.querySelector('.modal');
+const imagenModal = document.querySelector('.modal img');
 const cerrar = document.querySelector('.close');
-const previous = document.querySelector('.previous');
+const prev = document.querySelector('.previous');
 const next = document.querySelector('.next');
 let indiceImg = undefined;
 
- 
+console.log( )
+// ************Eventos************************************
 
-galeria.addEventListener('click',verImagen);
-previous.addEventListener('click',prevImg);
-next.addEventListener('click',nextImg);
-cerrar.addEventListener('click',cerrarVentana);
+// fotos.forEach(pic =>{
+//     pic.addEventListener('click', (e)=>{
+//      
+//     }
+//     )
+galeria.addEventListener('click',abrirModal); 
+cerrar.addEventListener('click',()=>{
+     modal.style.display="none";
+     imagenModal.src = "";
+})
 
-modal.addEventListener('click',(e)=>{
-    console.log(e.target)
-}); 
+prev.addEventListener('click',imgPrev);
+next.addEventListener('click',imgNext);
 
 
-function verImagen(e){
+
+
+// *********funciones********************
+
+function abrirModal(e){
     if(e.target.classList.contains('pics')){
-         imagenInterna.textContent = "";
-         modal.style.display="flex";
-         let fotoModal = document.createElement('img');
-         fotoModal.src = e.target.src;
-         fotoModal.classList.add('img-interna');
-         fotoModal.style.width="100%";
-         fotoModal.style.height="100%h";
-   
-         imagenInterna.appendChild(fotoModal);
+        modal.style.display="block";
+        crearImagen(e);
 
-        indiceImg = Array.from(fotos).indexOf(e.target);   
-        comprobarBotonPrev();
-        comprobarBotonNext();
     }
- 
+    
 }
 
-function cerrarVentana(e){
-    modal.style.display = "none";
-    imagenInterna.textContent = "";
-}
-function prevImg(){ 
-     imagenInterna.querySelector('img').src = fotos[indiceImg -1].src;
-     indiceImg --;    
-     comprobarBotonPrev();
-     comprobarBotonNext();
+function crearImagen(e){
+    imagenModal.src = e.target.src;
+
+    indiceImg = Array.from(fotos).indexOf(e.target);   
+    validarBtnPrev();
+    validarBtnNext();
 }
 
- function nextImg(){
-     imagenInterna.querySelector('img').src = fotos[indiceImg +1].src;
-     indiceImg ++;
-     comprobarBotonPrev();
-     comprobarBotonNext();
- }
+function imgPrev(){
+    imagenModal.src = fotos[indiceImg -1].src;
+    indiceImg -- ;
+    validarBtnPrev();
+    validarBtnNext();
+}
 
-  function comprobarBotonPrev(){
-      if(indiceImg === 0) {
-          previous.style.display="none";
-      }else{
-        previous.style.display="block";
-      }
-   }
+function imgNext(){
+    imagenModal.src = fotos[indiceImg +1].src;
+    indiceImg ++ ;
+    validarBtnPrev();
+    validarBtnNext();
+}
 
-   function comprobarBotonNext(){
+function validarBtnPrev(){
+     if(indiceImg === 0){
+        prev.style.display="none";
+     }else {
+        prev.style.display="block";
+        
+     }
+}
+
+function validarBtnNext(){
     if(indiceImg === fotos.length -1){
+        console.log(indiceImg)
         next.style.display="none";
     }else {
         next.style.display="block";
     }
-   }
+}
+
+ 
+ 
