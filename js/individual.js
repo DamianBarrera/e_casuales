@@ -9,12 +9,6 @@ let indiceImg = undefined;
 
 console.log( )
 // ************Eventos************************************
-
-// fotos.forEach(pic =>{
-//     pic.addEventListener('click', (e)=>{
-//      
-//     }
-//     )
 galeria.addEventListener('click',abrirModal); 
 cerrar.addEventListener('click',()=>{
      modal.style.display="none";
@@ -33,14 +27,13 @@ function abrirModal(e){
     if(e.target.classList.contains('pics')){
         modal.style.display="block";
         crearImagen(e);
-
     }
     
 }
 
 function crearImagen(e){
     imagenModal.src = e.target.src;
-
+    // videoModal.src = e.target.src;
     indiceImg = Array.from(fotos).indexOf(e.target);   
     validarBtnPrev();
     validarBtnNext();
@@ -71,7 +64,6 @@ function validarBtnPrev(){
 
 function validarBtnNext(){
     if(indiceImg === fotos.length -1){
-        console.log(indiceImg)
         next.style.display="none";
     }else {
         next.style.display="block";

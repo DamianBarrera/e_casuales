@@ -141,6 +141,9 @@
     .main{
         width: 100%;
     }
+    /* nav{
+        box-shadow: inset 0 0 10px 5px #7cc1dd;
+    } */
     .container{
          display: block;   
         }
