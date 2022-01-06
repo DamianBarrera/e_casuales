@@ -85,6 +85,14 @@
        border-top: 3px  dashed#76c476;
        border-bottom: 3px dashed #76c476;
    }
+   @keyframes changeColor {
+    0%{}
+    100%{
+      border-top: 3px  dashed#5eff00;
+      border-bottom: 3px dashed #5eff00;
+  
+    }
+}
    .mini{
         width: 50px;
         height: 50px;
