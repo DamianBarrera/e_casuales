@@ -5,10 +5,7 @@ const imagenModal = document.querySelector('.modal img');
 const cerrar = document.querySelector('.close');
 const prev = document.querySelector('.previous');
 const next = document.querySelector('.next');
-// const videoGallery = document.querySelector('.galeria-videos');
-// const modalVideo = document.querySelector('.modal-video');
-// const videoModal = document.querySelector('.modal-video video');
-// const closeVid = document.querySelector('.close-vid');
+
 let indiceImg = undefined;
 
  
@@ -22,10 +19,7 @@ cerrar.addEventListener('click',() =>{
       imagenModal.src = "";
 
 } )
-// closeVid.addEventListener('click',cerrarVideoModal);
-    
-    
-// videoGallery.addEventListener('click',abrirModalVideo);
+
 prev.addEventListener('click',imgPrev);
 next.addEventListener('click',imgNext);
 
@@ -41,15 +35,6 @@ function abrirModal(e){
     }
 }
 
-//  function abrirModalVideo(e){
-//       modalVideo.style.display="block";
-//       videoModal.src = e.target.src;
-//  }
-
-// function cerrarVideoModal(e){
-//     modalVideo.style.display="none";
-     
-// }
  
 
 function crearImagen(e){
