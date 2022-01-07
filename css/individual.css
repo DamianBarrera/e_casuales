@@ -36,7 +36,8 @@
     width: 60%;
     text-align: center;
 }
-.descripcion-personal h3{
+.descripcion-personal h3,
+h4{
     margin-bottom: 15px ;
     text-align: center;
     color: #e796c9;
@@ -91,22 +92,28 @@
     border-radius: 10px;
     box-shadow: 0 0 8px rgb(101, 97, 97);   
  }
-.foto ,
-.video video {
+.foto , video {
     width: 100%;
     height: 100%;
     padding: 2px;    
     box-shadow:  0 0 4px 2px rgb(154, 16, 147);
     border-radius: 10px;
     object-fit: cover;
+    cursor: pointer;
 }
+.galeria-videos{
+    padding: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: start  ;
+    flex-wrap: wrap;
+}   
 .video{
-    width: 250px;
+    width: auto;
     height: 300px;
+    margin: 10px 10px;
 }
-.nodatos{
-    display: none;
-}
+ 
 /* ****************Modal de la imagen************************** */
  
  .modal img{
@@ -119,11 +126,28 @@
     height: 100%;
     padding: 5px;
     background-color: rgb(17, 8, 8);
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
-    display:none ;
+    display: none ;
+ }
  
+ .modal-video{
+     height: 100%;width: 100%;
+     height: 100%;
+     padding: 20px;
+     background-color: #000;
+     overflow: hidden;
+     position: fixed;
+     top: 0;
+     left: 0;
+     display:none;
+     justify-content: center;
+ }
+ .modal-video video {
+     width: 70%;
+    height: 100%;
  }
  
 
@@ -132,7 +156,8 @@
       height: 100vh;
     
   }
-
+ 
+  .close-vid,
   .close,
   .previous,
   .next{
@@ -150,7 +175,8 @@
     z-index: 10;
     border: 2px solid red;
  }
- .close{
+ .close,
+ .close-vid {
      top: 5%;
      left: 2%;
  }
