@@ -59,7 +59,7 @@ function imgNext(){
 }
 
 function validarBtnPrev(){
-     if(indiceImg === 0){
+     if(indiceImg ===  0){
         prev.style.display="none";
      }else {
         prev.style.display="block";
@@ -68,6 +68,7 @@ function validarBtnPrev(){
 }
 
 function validarBtnNext(){
+    console.log(indiceImg)
     if(indiceImg === fotos.length -1){
         next.style.display="none";
     }else {

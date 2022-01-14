@@ -105,8 +105,8 @@ body{
      background-color: #d51e92;
  }
  .thumbs{
-    border-top: 5px  dashed#59a459;
-    border-bottom: 5px dashed #59a459;
+    border-top: 5px  dashed lime;
+    border-bottom: 5px dashed  lime;
     display:  flex;
     justify-content: center;
     animation: changeColor 800ms linear infinite alternate-reverse;
@@ -114,9 +114,8 @@ body{
   @keyframes changeColor {
       0%{}
       100%{
-        border-top: 5px  dashed#5eff00;
-        border-bottom: 5px dashed #5eff00;
-    
+        border-top: 5px  dotted rgb(0, 255, 234);
+        border-bottom: 5px dotted  rgb(0, 255, 234);
       }
   }
 

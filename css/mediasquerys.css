@@ -88,8 +88,8 @@
    @keyframes changeColor {
     0%{}
     100%{
-      border-top: 3px  dashed#5eff00;
-      border-bottom: 3px dashed #5eff00;
+        border-top: 3px  dotted rgb(0, 255, 234);
+        border-bottom: 3px dotted  rgb(0, 255, 234);;
   
     }
 }
