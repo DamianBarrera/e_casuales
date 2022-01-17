@@ -5,14 +5,20 @@ const imagenModal = document.querySelector('.modal img');
 const cerrar = document.querySelector('.close');
 const prev = document.querySelector('.previous');
 const next = document.querySelector('.next');
-
+const allImages = document.querySelectorAll('img');
 let indiceImg = undefined;
 
  
-console.log(  )
+ 
 
 // ************Eventos************************************
 galeria.addEventListener('click',abrirModal); 
+
+allImages.forEach( pic =>{
+    pic.addEventListener('contextmenu',(e)=>{
+        e.preventDefault();
+    })
+})
 
 cerrar.addEventListener('click',() =>{
       modal.style.display="none";
@@ -68,7 +74,6 @@ function validarBtnPrev(){
 }
 
 function validarBtnNext(){
-    console.log(indiceImg)
     if(indiceImg === fotos.length -1){
         next.style.display="none";
     }else {
