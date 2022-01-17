@@ -1,5 +1,5 @@
-/* ****************900*****Individual************************ */
-@media screen and (max-width:901px){
+/* ****************922*****Individual************************ */
+@media screen and (max-width:922px){
    
     .data-resp {
         width: 180px;
@@ -11,10 +11,25 @@
     .thumbs .mini:nth-child(even){
         display: none;
     }
+    .name{
+        letter-spacing: 1px;
+    }
 }
+
+/* ****************903**************************************************** */
+ @media screen and (max-width:903px){
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px;
+    }
+
+ }
 
  /* **********  768  *************** *******************************/
 @media screen and (max-width:769px){    
+    .main{
+        width: 95%;
+    }
     .descripcion p{
         font-size: 1em;    
     }
@@ -26,14 +41,18 @@
         font-size: 2.2em;
         line-height: 1.4em;
     }
+  
     .galeria {
-    padding: 15px;
-    grid-template-columns: repeat(auto-fill,minmax(15%, 1fr));
-    grid-gap: 15px;
-    }
+        padding: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 10px;
+        
+        }
+
     .name{
         font-size: 1.2em;
         line-height: 1.8em;
+        letter-spacing: 1px;
     }
     .derechos p {
         font-size: 1.2em;
@@ -49,14 +68,13 @@
     }
     .gallery{
         padding: 5px;
-    }
-
-      
+    }     
 }
-
+ 
  
 /* ***  *****  540  *****   ******* *******************************/
 @media screen and ( max-width:541px){
+     
     .descripcion p{
         margin: 0 0;
         font-size: 1.2em;
@@ -99,12 +117,7 @@
         margin: 0 2px;
         padding: 2px 0 ;
    }
-    .galeria {
-    padding: 10px;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 10px;
-    }
- 
+
     .derechos p {
         font-size: 1em;
     }
@@ -130,9 +143,6 @@
     .gallery{
         padding: 5px;
     }
-
- 
-
 }
 /* **********  500  *************** *******************************/
 @media screen and (max-width:500px){
@@ -149,9 +159,7 @@
     .main{
         width: 100%;
     }
-    /* nav{
-        box-shadow: inset 0 0 10px 5px #7cc1dd;
-    } */
+
     .container{
          display: block;   
         }
@@ -161,9 +169,9 @@
         }
         .data-resp {
             display: block;
-            width: 100%;
+            width: 100%;    
     }
-   .vertical{
+    .vertical{
        display: none;
    }
     .data-title p,
@@ -179,6 +187,11 @@
         box-shadow:inset 0 0 12px rgb(177, 131, 79);
         padding: 10px;
     }
+
+    .name{
+        letter-spacing: .2px;
+    }
+
     .fa-circle-chevron-up{
         font-size: 1.7em;
     }
@@ -225,7 +238,7 @@
     }
     .galeria {
         grid-template-columns: repeat(3,1fr);
-    }
+    }   
     .derechos p {
         font-size: .8em;
     }
@@ -243,6 +256,9 @@
         margin: 0 0;
         font-size: .9em;
     }
+    .galeria {
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 /* ***  *****  360  *****   ******* *******************************/
 @media screen and (max-width:361px){
@@ -250,10 +266,9 @@
         font-size: 1.4  em;
     }
     .modal-foto{
-    width: 100%;
-    height: 100%;
- 
- }
+         width: 100%;
+         height: 100%;
+    }
 }
 /* ***  *****  328  *****   ******* *******************************/
 @media screen and (max-width:329px){
@@ -267,15 +282,13 @@
         font-size: 1.2em;
         letter-spacing: 1px;
     }
+ 
 }
 
 /* ***  *****  284  *****   ******* */
 @media screen and (max-width:285px){
     .descripcion p:nth-child(3){
         display: none;
-    }
-    .galeria {
-        grid-template-columns: repeat(2,1fr);
     }
 
 }
@@ -292,6 +305,9 @@
    }
    .derechos p {
     font-size: .7em;
+   }
+   .name{
+       letter-spacing: .5px;
    }
 }
 
