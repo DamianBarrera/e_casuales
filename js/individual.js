@@ -6,10 +6,9 @@ const cerrar = document.querySelector('.close');
 const prev = document.querySelector('.previous');
 const next = document.querySelector('.next');
 const allImages = document.querySelectorAll('img');
+
 let indiceImg = undefined;
 
- 
- 
 
 // ************Eventos************************************
 galeria.addEventListener('click',abrirModal); 
@@ -80,3 +79,14 @@ function validarBtnNext(){
         next.style.display="block";
     }
 }
+// *********Boton Whatsapp****************
+const whatsBtn = document.querySelectorAll('.whats-logo .whats-btn');
+const nombre = document.querySelector('.container h3').textContent;
+const numTel = document.querySelector('.data-resp p:nth-child(6)').getAttribute('data-number');
+ 
+// whatsBtn.href= `https://wa.me/+54${numTel}/?text=Hola ${nombre}, te vi en encuentroscasuales.com y queria conocer mas de vos ` ;
+
+whatsBtn.forEach(a => {
+    a.href= `https://wa.me/+54${numTel}/?text=Hola ${nombre}, te vi en encuentroscasuales.com y queria conocer mas de vos ` ;
+})
+    
