@@ -14,6 +14,7 @@
 }
 .data{
     display: flex;
+    width: 50%;
 }
 .espaciado{
     letter-spacing: 1.1px;

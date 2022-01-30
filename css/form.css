@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: linear-gradient(#080009,#b83ba7,#b835a7); */
+    background-image: linear-gradient(#080009,#65225c,#b835a7);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: 10px;
+    min-width: 230px;
+    font-family: Calibri ;
+}
+
+.main{
+    width: 85%;
+    margin: auto;
+}
+img{
+    width: 100%;
+}
+/* **************************************** */
+.logo{
+    /* background-color: #000; */
+    text-align: center;
+}
+
+.logo img {
+    width: 80%;
+    height: auto;
+}
+nav{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    line-height: 30px;
+    background-color: #fff;
+    box-shadow: inset 0 0 10px 5px #d77cdd;
+}
+nav ul{
+    width: 60%;
+    margin:  0 auto;
+    display: flex;
+    justify-content:center;
+  
+   }
+    nav ul li {
+    display: inline-block;
+    margin: 0 2.5em;
+
+
+}
+nav ul li a {
+    font-size: 2.5em;
+    color: #9611c7;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.4em;
+    text-shadow: 0 1px #280634;
+}
+
+h2{
+    margin: 10px 0;
+    color: rgb(213, 57, 57);
+}
+p{
+    margin: 25px 0;
+    letter-spacing: 1.2px;
+}
+ .whats a {
+    color: #0fca5a;
+    text-decoration: none;
+ }
+.aviso{
+    margin: 5% 8%;
+    font-size: 2em;
+    color: rgb(214, 213, 213);
+}
+article{
+    border-bottom: 5px solid rgb(108, 108, 108);
+
+}
+.upper{
+    text-transform: uppercase;
+}
+.formulario{
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: 5px solid rgb(108, 108, 108);
+    margin-bottom: 120px;
+ 
+}
+form{
+    width: 65%;
+    margin: 0 auto  ;
+    margin-bottom: 30px;
+    padding: 50px 30px;
+    background-color: #ba5aac93;
+    border-radius: 20px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.form{
+    width: 75%;
+}
+label{
+    font-size: 3em;
+    color: rgb(214, 213, 213);
+    text-align: start;
+}
+input, textarea{
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+}
+ input {
+     display: block;
+     width: 100%;
+     height: 30px;
+     font-weight: 600;
+ }
+ textarea{
+     display: block;
+     width: 100%;
+     height: 100px;
+     resize: none;
+ }
+ textarea:focus,
+ input:focus{
+     background-color: #dddddd;
+ }
+
+ .btn{
+     width: 100%;
+     height: 35px;
+     margin: 20px auto;
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     color: white;
+     font-size: 2.2em;
+     line-height: 20px;
+     background-color: rgb(58, 134, 209);
+     cursor: pointer;
+ }
+ .btn:hover{
+    background-color: rgb(24, 118, 211);
+    letter-spacing: 1.1px;
+ }
