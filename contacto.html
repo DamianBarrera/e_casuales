@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/form.css">
+ 
+    <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/mediasquerys.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -20,9 +20,9 @@
         </header>
         <nav>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="index.html">Escorts</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="escorts.html">Escorts</a></li>
+                <li><a href="">Contacto</a></li>
             </ul>
         </nav>
         <section class="aviso">
@@ -70,8 +70,19 @@
                 </div>
             </form>
         </section>
+        <footer>
 
+            <div class="derechos">
+                <p>Copyright &copy; <span id="year"></span> <a href="#">EncuentrosCasuales.com</a> | Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </div>
+    <script>
+        const year = document.querySelector('#year')
+        const currentYear = new Date().getFullYear()
+        year.textContent = currentYear ;
+  
+      </script>
 </body>
 
 </html>

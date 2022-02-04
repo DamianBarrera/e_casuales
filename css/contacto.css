@@ -5,12 +5,15 @@
 }
 body{
     /* background-image: linear-gradient(#080009,#b83ba7,#b835a7); */
-    background-image: linear-gradient(#080009,#65225c,#b835a7);
+    background-image: linear-gradient(#080009 10%,#65225c 75%,#b835a7);
     background-repeat: no-repeat;
     background-size:cover;
     font-size: 10px;
     min-width: 230px;
     font-family: Calibri ;
+}
+a{
+    text-decoration: none;
 }
 
 .main{
@@ -22,8 +25,10 @@ img{
 }
 /* **************************************** */
 .logo{
-    /* background-color: #000; */
+    margin: 0 auto;
+    background-color: #000;
     text-align: center;
+ 
 }
 
 .logo img {
@@ -31,7 +36,6 @@ img{
     height: auto;
 }
 nav{
-    width: 80%;
     margin: 0 auto;
     height: auto;
     line-height: 30px;
@@ -151,4 +155,13 @@ input, textarea{
  .btn:hover{
     background-color: rgb(24, 118, 211);
     letter-spacing: 1.1px;
+ }
+
+ .derechos p, 
+ .derechos a {
+   
+     text-align: center;
+     font-size: 1.3em;
+     line-height: 1.2em;
+     color: #fff;
  }

@@ -9,12 +9,12 @@
 body{
     /* background-image: url("fondo_rojo.png"); */
     /* background-image: url("segundoLogo.png"); */
- 
+
     background-image: linear-gradient(#2a0031,#430278,#9b06d6);
-    /* background-image: url("../ondas2.png"); */
     background-repeat: no-repeat;
     background-size:cover;
     font-size: 10px;
+    font-family: Calibri ;
     min-width: 230px;
 }
  img{
@@ -22,7 +22,7 @@ body{
  }
  a{
      text-decoration: none;
-     color: red;
+     color: rgb(0, 4, 255);
  }
 
  /* ****************************** */
@@ -187,6 +187,6 @@ body{
         line-height: 1.2em;
         color: #fff;
     }
-/* ****************************CONTACTO*************************  */
+ 
     
 
