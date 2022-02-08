@@ -14,6 +14,10 @@
     .name{
         letter-spacing: 1px;
     }
+    .mayor p,
+    .menor p {
+    font-size: 3.5em;
+    }
 }
 
 /* ****************903**************************************************** */
@@ -33,7 +37,7 @@
     .descripcion p{
         font-size: 1em;    
     }
-    .guia h2{
+    .guia-virtual{
         font-size: 2.4em;
         letter-spacing: 2px;
     }
@@ -72,8 +76,22 @@
    form{
        padding: 20px 10px;
    }
+   .btn-contacto{
+    margin: 5px auto;
+}
 }
  
+/* ***  *****  670  *****   ******* *******************************/
+@media screen and (max-width:671px){
+    .mayor p,
+    .menor p{
+        font-size: 2.5em;
+    }
+    .btn-index{
+        font-size: 1.8em;
+    }
+ 
+}
  
 /* ***  *****  540  *****   ******* *******************************/
 @media screen and ( max-width:541px){
@@ -86,9 +104,10 @@
     .descripcion p:nth-child(5){
         display: none;
     }
-    .guia h2{
+    .guia-virtual{
         font-size: 2em;
         letter-spacing: 1px;
+        
     }
     nav{
         border-bottom: 4px solid #a40ea3; 
@@ -103,7 +122,7 @@
         background-color: #d51e92;
     }
     .thumbs{
-       border-top: 3px  dashed#76c476;
+       border-top: 3px  dashed #76c476;
        border-bottom: 3px dashed #76c476;
    }
    @keyframes changeColor {
@@ -146,8 +165,11 @@
     .gallery{
         padding: 5px;
     }
-    .aviso{
-        font-size: 1.5em;
+    .aviso,
+    .bienvenida p,
+    .warning p,
+    .borde p{
+        font-size: 1.2em;
     }
 
     form{
@@ -219,6 +241,25 @@
         width: 100vw;
         height: 100%;
     }
+    .bienvenida p ,
+    .warning p,
+    .borde p {
+        font-size: 1.6em;
+      
+    }
+    .aclaracion p {
+        font-size: 1em;
+    }
+    .aviso-index{
+        font-size: 2em;
+    }
+    .mayor p,
+    .menor p {
+        font-size: 2em;
+    }
+    .btn-index{
+        font-size: 1.5em;
+    }
 }
 /* **********  425  *************** *******************************/
 @media screen and (max-width:426px){
@@ -241,14 +282,34 @@
   .form{
       width: 80%;
   }
-    
+    .guia-virtual{
+        font-size: 2.2em; 
+    }
+    .ingreso{
+        flex-direction: column;
+    }
+    .mayor p ,
+    .menor p {
+        font-size: 2.5em;
+    }
+    .mayor {
+        margin-bottom: 15%;
+    }
+    .btn-index{ 
+        padding: 10px;
+        font-size: 2em;
+    }
+    footer {
+        font-size: 1em;
+     
+    }
 }
 /* ***  *****  414  *****   ******* *******************************/
 @media screen and (max-width:415px){
     .descripcion p{
         margin: 0 0;
     }
-    .guia h2{
+    .guia-virtual{
         font-size: 1.6em;
     }
     nav ul li {
@@ -289,8 +350,8 @@
 }
 /* ***  *****  360  *****   ******* *******************************/
 @media screen and (max-width:361px){
-    .guia h2{
-        font-size: 1.4  em;
+    .guia-virtual{
+        font-size: 1.4em;
     }
     .modal-foto{
          width: 100%;
@@ -311,9 +372,19 @@
     .descripcion p:nth-child(6){
         display: none;
     }
-    .guia h2{
+    .guia-virtual{
         font-size: 1.2em;
         letter-spacing: 1px;
+    }
+    .mayor p ,
+    .menor p {
+        font-size: 2em;
+    }
+    .mayor {
+        margin-bottom: 10%;
+    }
+    .btn-index{ 
+        font-size: 1.5em;
     }
  
 }
@@ -322,6 +393,13 @@
 @media screen and (max-width:285px){
     .descripcion p:nth-child(3){
         display: none;
+    }
+  
+    .mayor {
+        margin-bottom: 10%;
+    }
+    .btn-index{ 
+        font-size: 1.2em;
     }
 
 }
@@ -342,7 +420,16 @@
    .name{
        letter-spacing: .5px;
    }
+   .bienvenida p ,
+   .warning p,
+   .borde p {
+       font-size: 1.2em;
+   }
+   .aviso-index{
+    font-size: 1.6em;
+   }
 }
+ 
 
 /* **************1440************************** */
 @media screen and (min-width:1440px){
@@ -350,9 +437,10 @@
         margin: 2px 5px;
         font-size: 2em;
     }
-    .guia h2 {
+    .guia-virtual{
      font-size: 3.2em;
     }
+
     nav ul li a {
      font-size: 3em;
     }
@@ -377,6 +465,58 @@
     .whats-logo img{
         width: 120px;
     }
+    .name{  
+        font-size: 2em;
+    }
+    /* *****INDEX******* */
+    p{
+        font-size: 3em;
+        
+ 
+    }
+    .aclaracion p {
+        font-size: 2em;
+    }
+    .aviso-index{
+        font-size: 4.5em;
+    }
+    .mayor p,
+    .menor p {
+    font-size: 4.5em;
+    }
+    .btn-index{
+        font-size: 3em;
+    }
+    .derechos p {
+        font-size: 3em;
+    }
+        /* *****CONTACTO******* */
+      .aviso p {
+          font-size: 2em;
+      }
+      .aviso-contacto {
+          font-size: 3em;
+      }
+   
+    .form{
+        width: 85%;
+    }
+    label{
+        font-size: 4em;
+    }
+
+    input {
+        height: 50px;
+        font-size: 2em;
+    }
+    textarea{
+        font-size: 2em;
+    }
+    .btn-contacto{
+        height: 55px;
+        font-size: 3.2em;
+
+    }
 }
 
 /* **************1920************************** */
@@ -384,7 +524,7 @@
     .descripcion p {
         font-size: 3em;
     }
-    .guia h2 {
+    .guia-virtual {
      font-size: 4.2em;
     }
     nav ul li a {
@@ -420,13 +560,57 @@
         font-size: 2.2em;
         line-height: 1.2em;
     }
+    .name{  
+        font-size: 3em;
+    }
+       /* *****INDEX******* */
+       p{
+        font-size: 4em;
+    }
+    .aclaracion p {
+        font-size: 3em;
+    }
+    .aviso-index{
+        font-size: 5.5em;
+    }
+    .mayor p,
+    .menor p {
+    font-size: 5.5em;
+    }
+    .btn-index{
+        font-size: 4em;
+    }
+    .derechos p {
+        font-size: 4em;
+    }
+       /* *****CONTACTO******* */
+       nav ul li {
+        margin: 0 5em;
+    }
+ 
+    label{
+      font-size: 6em;
+    }
+
+     input {
+      height: 60px;
+      font-size: 3em;
+    }
+    textarea{
+      font-size: 3em;
+    }
+  .btn-contacto{
+      height: 65px;
+      font-size: 4em;
+   }
+  
 }
 /* **************2560************************** */
 @media screen and (min-width:2560px){
     .descripcion p {
         font-size: 4em;
     }
-    .guia h2 {
+    .guia-virtual    {
      font-size: 8em;
     }
     nav ul li a {
@@ -463,6 +647,67 @@
         font-size: 2.2em;
         line-height: 1.2em;
     }
+    .name{  
+        font-size: 3.5em;
+    }
+         /* *****INDEX******* */
+         p{
+            font-size: 5em;
+        }
+        .aclaracion p {
+            font-size: 4em;
+           
+        }
+        .aviso-index{
+            font-size: 6.5em;
+        }
+        .mayor p,
+        .menor p {
+        font-size: 6.5em;
+        }
+        .btn-index{
+            font-size: 5em;
+        }
+        .derechos p {
+            font-size: 4.5em;
+        }
+             /* *****CONTACTO******* */
+        .aviso-contacto {
+            font-size: 4em;
+        }
+        .aviso p {
+            font-size: 2.5em;
+        }
+        label{
+      font-size: 6em;
+    }
+
+     input {
+      height: 60px;
+      font-size: 3em;
+    }
+    textarea{
+      font-size: 3em;
+    }
+  .btn-contacto{
+      height: 65px;
+      font-size: 4em;
+   }
+ 
+   input {
+    height: 80px;
+    font-size: 3.5em;
+    padding-left: 15px;
+  }
+  textarea{
+    height: 200px ;
+    padding-left: 15px;
+    font-size: 3.5em;
+  }
+.btn-contacto{
+    height: 100px;
+    font-size: 5em;
+ }
 }
 
  

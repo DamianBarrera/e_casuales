@@ -9,7 +9,7 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     font-size: 10px;
-    min-width: 230px;
+    
     font-family: Calibri ;
 }
 a{
@@ -52,8 +52,6 @@ nav ul{
     nav ul li {
     display: inline-block;
     margin: 0 2.5em;
-
-
 }
 nav ul li a {
     font-size: 2.5em;
@@ -63,14 +61,14 @@ nav ul li a {
     line-height: 1.4em;
     text-shadow: 0 1px #280634;
 }
-
-h2{
+.aviso-contacto{
     margin: 10px 0;
     color: rgb(213, 57, 57);
 }
-p{
+.aviso p{
     margin: 25px 0;
     letter-spacing: 1.2px;
+ 
 }
  .whats a {
     color: #0fca5a;
@@ -139,7 +137,7 @@ input, textarea{
      background-color: #dddddd;
  }
 
- .btn{
+ .btn-contacto{
      width: 100%;
      height: 35px;
      margin: 20px auto;
@@ -159,9 +157,9 @@ input, textarea{
 
  .derechos p, 
  .derechos a {
-   
      text-align: center;
      font-size: 1.3em;
      line-height: 1.2em;
      color: #fff;
+ 
  }

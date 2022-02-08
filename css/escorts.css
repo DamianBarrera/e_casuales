@@ -67,7 +67,7 @@ body{
      align-items: center;
      position: relative;
  }
- .guia h2{
+  h2{
      color: #1be366;
      font-size: 2.8em;
      letter-spacing: 2.5px;

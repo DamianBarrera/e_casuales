@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    min-width: 230px;
+    /* min-width: 230px; */
     background-image: linear-gradient(#2a0031,#430278,#9b06d6);
     background-repeat: no-repeat;
     background-size:cover;
@@ -36,12 +36,15 @@ p{
     font-size: 2em;
     color: rgb(214, 213, 213);
     text-shadow: 0 1px #000;
-    
 }
+.aclaracion p {
+    font-size: 1.2em;
+} 
+   
 section {
     margin: 5% 5%;
 }
-h2{
+.aviso-index{
     width: 50%;
     margin: 10px 0;
     color: rgb(213, 57, 57);
@@ -54,16 +57,15 @@ h2{
 }
 
 .ingreso {
-        padding: 20px;
+    padding: 20px;
     display: flex;
- 
+
 }
  
 .mayor p,
 .menor p {
     font-size: 4em;
     text-align: center;
- 
     text-shadow: 0 0 10px rgb(255, 255, 0);
 }
  
@@ -73,8 +75,7 @@ h2{
     filter:hue-rotate(210deg)
 }
 
-button{
-   
+.btn-index{
     width: 80%;
     height: 50%;
     margin: 10px auto;
@@ -82,7 +83,7 @@ button{
     outline: none;
     background-image: linear-gradient(to right, #912e4a ,#63002F);
     color:rgb(255, 133, 235); 
-    font-size: 2.5em;
+    font-size: 2em;
     border-radius: 30px;
     cursor: pointer;
     display: flex;
@@ -90,12 +91,12 @@ button{
     align-items: center;
     transition: all 200ms linear;
 }
-button:hover{
+.btn-index:hover{
     background-image: linear-gradient(to left, #912e4a,#63002F);
     color:rgb(0, 177, 68);
 
 }
-footer{
+.derechos p{
     padding-bottom: 10px;
     font-size: .8em;
     text-align: center;
