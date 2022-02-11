@@ -1,4 +1,4 @@
-const galeria = document.querySelector('.galeria');
+    const galeria = document.querySelector('.galeria');
 const fotos = document.querySelectorAll('.galeria img')
 const modal = document.querySelector('.modal');
 const imagenModal = document.querySelector('.modal img');
@@ -90,3 +90,7 @@ whatsBtn.forEach(a => {
     a.href= `https://wa.me/+54${numTel}/?text=Hola ${nombre}, te vi en encuentroscasuales.com y queria conocer mas de vos ` ;
 })
     
+// *****Footer*********
+const year = document.querySelector('#year')
+const currentYear = new Date().getFullYear()
+year.textContent = currentYear ;

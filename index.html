@@ -18,7 +18,7 @@
         <section class="bienvenida">
             <article>
                 <p>
-                    Bienvenidos a Encuentroscasuales.com. Una guia virtual de escorts, acompañantes y masajistas de Córdoba. 
+                    Bienvenidos a Encuentroscasuales.com. Una guía virtual de escorts, acompañantes y masajistas de Córdoba. 
                 </p>
             </article>
         </section>
@@ -48,16 +48,16 @@
         </section>    
         <section class="borde">
             <p>
-                Al ingresar al sitio, el usuario declara bajo su responsabilidad ser mayor de edad, liberando asi al sitio 
-                y sus responsables de cualquier ofenza que pudiere causarle debido al contenido del mismo.
+                Al ingresar al sitio, el usuario declara bajo su responsabilidad ser mayor de edad, liberando así al sitio 
+                y sus responsables de cualquier ofensa que pudiere causarle debido al contenido del mismo.
             </p>
         </section>
       
         <section class="aclaracion">
             <p>
                 Sitio web destinado a todas las personas que quieran dar a conocer los servicios que brindan. No somos una agencia
-                de acompañantes. Todas las personas aquí publicadas son mayores de edad que trabajan de forma autonoma. <br>
-                Encuentroscasuales.com no tiene ninguna relación contraactual con las personas aquí publicadas. 
+                de acompañantes. Todas las personas aquí publicadas son mayores de edad que trabajan de forma autónoma. <br>
+                Encuentroscasuales.com no tiene ninguna relación contractual con las personas aquí publicadas. 
             </p>
             <br>
             <p>
@@ -68,9 +68,14 @@
         </section>
         <footer>
             <div class="derechos">
-                <p>Copyright &copy; <span id="year"></span>EncuentrosCasuales.com | Todos los derechos reservados.</p>
+                <p>Copyright &copy; <span id="year"></span> EncuentrosCasuales.com | Todos los derechos reservados.</p>
             </div>
         </footer>
     </div>    
+    <script>
+        const year = document.querySelector('#year')
+        const currentYear = new Date().getFullYear()
+        year.textContent = currentYear ;
+    </script>
 </body>
 </html>

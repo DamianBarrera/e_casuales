@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/mediasquerys.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -30,7 +30,7 @@
                 <h2 class="aviso-contacto"> Importante !</h2>
                 <p>
                     EncuentrosCasuales.com no es una agencia de escorts o acompañantes, solo es un medio
-                    publicitario para hacerse conocer. Todas las personas que aquì se publican son
+                    publicitario para hacerse conocer. Todas las personas que aquí se publican son
                     mayores de edad, independientes y trabajan bajo su propia voluntad
                 </p>
                 <p>
@@ -46,26 +46,32 @@
                 <p>
                     Si queres publicarte en EncuentrosCasuales.com mandanos un mensaje al <span class="whats"><a
                             href="">whatsapp</a></span>,
-                    o dejanos un mensaje a travéz del siguiente formulario y te contactaremos a la brevedad para
+                    o dejanos un mensaje a través del siguiente formulario y te contactaremos a la brevedad para
                     informarte de los pasos a seguir ...
                 </p>
             </article>
 
         </section>
         <section class="formulario">
-            <form action="" autocomplete="off">
+            <form class="form" action="" autocomplete="off">
                 <div class="form">
                     <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required>
+                    <input type="text" name="name" id="name" placeholder="Ingrese su nombre">
+                    <p class="warning nameWarning">*Debes completar este campo</p>
 
                     <label for="tel">Telefono</label>
-                    <input type="tel" name="tel" id="tel" placeholder="Ingrese número de telefono" required>
+                    <input type="tel" name="tel" id="tel" placeholder="Ingrese número de telefono">
+                    <p class="warning telWarning">*Debes completar este campo</p>
 
                     <label for="mail">Mail</label>
-                    <input type="email" name="mail" id="mail" placeholder="nombre@ejemplo.com" required>
+                    <input type="email" name="mail" id="mail" placeholder="nombre@ejemplo.com">
+                    <p class="warning mailWarning">*Debes completar este campo</p>
 
                     <label for="msj">Dejanos tu mensaje</label>
-                    <textarea name="textarea" id="" placeholder="Ingrese su mensaje" required></textarea>
+                    <textarea name="textarea" id="textarea" placeholder="Ingrese su mensaje"></textarea>
+                    <p class="warning areaWarning">*Debes completar este campo o escribir un mensaje valido</p>
+
+                    <div class="spinner">Enviando su consulta</div>
                     <button class="btn-contacto">Enviar</button>
                 </div>
             </form>
@@ -73,16 +79,12 @@
         <footer>
 
             <div class="derechos">
-                <p>Copyright &copy; <span id="year"></span> <a href="#">EncuentrosCasuales.com</a> | Todos los derechos reservados.</p>
+                <p>Copyright &copy; <span id="year"></span> <a href="#">EncuentrosCasuales.com</a> | Todos los derechos
+                    reservados.</p>
             </div>
         </footer>
     </div>
-    <script>
-        const year = document.querySelector('#year')
-        const currentYear = new Date().getFullYear()
-        year.textContent = currentYear ;
-  
-      </script>
+    <script src="contact.js"></script>
 </body>
 
 </html>
