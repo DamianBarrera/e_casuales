@@ -68,6 +68,13 @@ section {
     text-align: center;
     text-shadow: 0 0 10px rgb(255, 255, 0);
 }
+.menor .btn-index{
+    border: 2px solid #ff7373;
+}
+.mayor .btn-index{
+    border: 2px solid #3a853a;
+
+}
  
 .mano{
     width: 25%;
@@ -94,11 +101,10 @@ section {
 .btn-index:hover{
     background-image: linear-gradient(to left, #912e4a,#63002F);
     color:rgb(0, 177, 68);
-
 }
 .derechos p{
     padding-bottom: 10px;
-    font-size: .8em;
+    font-size: 1.2em;
     text-align: center;
     background-color: #9c24d0;
     border-radius: 20px 20px 0 0;

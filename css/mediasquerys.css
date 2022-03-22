@@ -468,6 +468,10 @@
     .name{  
         font-size: 2em;
     }
+
+    .nav-busqueda{
+        font-size: 2em;
+    }
     /* *****INDEX******* */
     p{
         font-size: 3em;
@@ -563,6 +567,11 @@
     .name{  
         font-size: 3em;
     }
+    .nav-busqueda{
+        font-size: 3.5em;        
+    }
+
+
        /* *****INDEX******* */
        p{
         font-size: 4em;
