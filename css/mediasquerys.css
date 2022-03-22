@@ -139,7 +139,9 @@
         margin: 0 2px;
         padding: 2px 0 ;
    }
-
+.nav-busqueda{
+    font-size: 1em;
+}
     .derechos p {
         font-size: 1em;
     }
